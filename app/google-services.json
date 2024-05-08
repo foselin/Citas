@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838525514188",
+    "project_id": "citas-4cae8",
+    "storage_bucket": "citas-4cae8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838525514188:android:45858847f881e42219ed69",
+        "android_client_info": {
+          "package_name": "sv.edu.ufg.fis.amb.citas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkDaT9HABSDsnjryZ_rvt99mhF-EM7owE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

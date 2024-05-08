@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blancocrema"
+    tools:context=".AbautFragment">
+
+
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beauty Glam"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beauty Glam es un elegante salón de belleza dedicado a proporcionar servicios de alta calidad en un ambiente relajante y acogedor. Nuestro equipo de profesionales altamente capacitados está comprometido a brindarle una experiencia excepcional, mientras realza su belleza natural."
+        android:textColor="@color/lavender"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Imagen -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipoosin"
+        android:layout_below="@id/textViewDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Horario de atención -->
+    <TextView
+        android:id="@+id/textViewHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario de atención:"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewHoursDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunes a Viernes: 12:00 AM - 5:00 PM\nSábados y Domingos: Cerrado"
+        android:layout_below="@id/textViewHours"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Dirección -->
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección:"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewHoursDetails"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewAddressDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123 Calle Principal, Ciudad, País"
+        android:layout_below="@id/textViewAddress"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Teléfono -->
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewAddressDetails"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+123 456 7890"
+        android:layout_below="@id/textViewPhone"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Correo electrónico -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo electrónico:"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewPhoneDetails"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewEmailDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info@beautyglam.com"
+        android:layout_below="@id/textViewEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+</RelativeLayout>

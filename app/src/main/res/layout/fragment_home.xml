@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/glamName"
+            android:text="Beauty Glam"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/lavender"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/glamDesc"
+            android:text="Bienvenidos al mejor salon , aquí viviras experincias únicas"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/lavender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/glamName"
+            app:layout_constraintEnd_toStartOf="@+id/glamImage"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/glamImage"
+            android:src="@drawable/logotipoosin"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Servicio 1 -->
+        <LinearLayout
+            android:id="@+id/service1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/glamImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Servicio 1: Corte -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/corte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/corteName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cortes de Pelo"
+                        android:textSize="20sp"
+                        android:textColor="@color/rosa"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/corteImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/hair_cut_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 2: Manicura -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/manicura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/manicuraName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manicura"
+                        android:textSize="20sp"
+                        android:textColor="@color/softBlue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/manicuraImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/manicure_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 3: Maquillaje -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/maquillaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/maquillajeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maquillaje"
+                        android:textSize="20sp"
+                        android:textColor="@color/rosa"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/maquillajeImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/makeup_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 4: Depilación -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/depilacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/depilacionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Depilación"
+                        android:textSize="20sp"
+                        android:textColor="@color/softBlue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/depilacionImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/waxing_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 5: Peinados Especiales -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/peinados_especiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/peinados_especialesName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peinados Especiales"
+                        android:textSize="20sp"
+                        android:textColor="@color/rosa"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/peinados_especialesImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/special_hairstyle_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 6: Tratamientos Faciales -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tratamientos_faciales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tratamientos_facialesName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tratamientos Faciales"
+                        android:textSize="20sp"
+                        android:textColor="@color/softBlue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/tratamientos_facialesImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/facial_treatment_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 7: Pedicura -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pedicura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/pedicuraName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedicura"
+                        android:textSize="20sp"
+                        android:textColor="@color/rosa"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/pedicuraImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/pedicure_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 8: Extensiones de Pelo -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/extensiones_pelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/extensiones_peloName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Extensiones de Pelo"
+                        android:textSize="20sp"
+                        android:textColor="@color/softBlue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/extensiones_peloImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/hair_extensions_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Servicio 9: Masajes -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/masajes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/masajesName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masajes"
+                        android:textSize="20sp"
+                        android:textColor="@color/rosa"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/masajesImage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/massage_service"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Agregar más servicios aquí -->
+
+        </LinearLayout>
+
+        <!-- Otros elementos y servicios aquí -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
